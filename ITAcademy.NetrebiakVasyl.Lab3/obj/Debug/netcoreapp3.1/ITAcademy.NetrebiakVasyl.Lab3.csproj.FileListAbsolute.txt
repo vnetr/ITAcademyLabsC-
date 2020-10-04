@@ -1,0 +1,13 @@
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.exe
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.deps.json
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.runtimeconfig.json
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.runtimeconfig.dev.json
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.dll
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.pdb
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.csprojAssemblyReference.cache
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.AssemblyInfoInputs.cache
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.AssemblyInfo.cs
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.csproj.CoreCompileInputs.cache
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.dll
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.pdb
+C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab3\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab3.genruntimeconfig.cache
