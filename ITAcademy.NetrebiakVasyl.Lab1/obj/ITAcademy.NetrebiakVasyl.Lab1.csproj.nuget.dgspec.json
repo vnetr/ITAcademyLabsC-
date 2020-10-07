@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj": {}
+    "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj": {
+    "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj",
+        "projectUniqueName": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj",
         "projectName": "ITAcademy.NetrebiakVasyl.Lab1",
-        "projectPath": "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj",
+        "projectPath": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab1\\ITAcademy.NetrebiakVasyl.Lab1.csproj",
         "packagesPath": "C:\\Users\\vnetr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab1\\obj\\",
+        "outputPath": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

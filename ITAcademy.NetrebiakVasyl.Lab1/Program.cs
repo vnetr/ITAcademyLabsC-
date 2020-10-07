@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+
 namespace ITAcademy.NetrebiakVasyl.Lab1
 {
     class Program
@@ -20,22 +22,24 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             Console.WriteLine();
 
 
-            const int SizeOfArray = 20;//Size 20 because of max value of 'long'
+            int SizeOfArray = DigitsInNumber;
             long[] MassiveOfNumbers = new long[SizeOfArray];
+
             OrganizeMassive(ref MassiveOfNumbers, N);
-            for (int i = 0; i < DigitsInNumber; i++)
+
+            for (int i = 0; i < MassiveOfNumbers.Length; i++)
             {
                 Console.WriteLine($"MassiveOfNumbers[{i}]={MassiveOfNumbers[i]}");
             }
             Console.WriteLine();
 
 
-            double ArithmeticMeanOfNNums=ArithmeticMean(N, DigitsInNumber);
+            double ArithmeticMeanOfNNums = ArithmeticMean(N, DigitsInNumber);
             Console.WriteLine($"Arithmetic mean of digits of N = {ArithmeticMeanOfNNums}");
             Console.WriteLine();
 
 
-            double GeometricMeanOfNNums=GeometricMean(N, DigitsInNumber);
+            double GeometricMeanOfNNums = GeometricMean(N, DigitsInNumber);
             Console.WriteLine($"Geometric mean of digits of N = {GeometricMeanOfNNums}");
             Console.WriteLine();
 
@@ -61,9 +65,9 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             long SumOfEvenNums;
             long SumOfOddNums;
             Console.Write("Enter first num of range: ");
-            int FirsNumOfRange = Convert.ToInt32(Console.ReadLine());
+            long FirsNumOfRange = Convert.ToInt64(Console.ReadLine());
             Console.Write("Enter end num of range: ");
-            int SecondNumOfRange=Convert.ToInt32(Console.ReadLine());
+            long SecondNumOfRange = Convert.ToInt64(Console.ReadLine());
             SumOfEvenNums = SumOfEvenNumbers(FirsNumOfRange, SecondNumOfRange);
             SumOfOddNums = SumOfOddNumbers(FirsNumOfRange, SecondNumOfRange);
             Console.WriteLine($"Sum of even numbers in range={SumOfEvenNums}, sum of odd={SumOfOddNums}");
@@ -94,7 +98,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
 
         static double ArithmeticMean(long YourNumber, int SumOfNumbers)
         {
-            double result=0;
+            double result = 0;
             double temp = 0;
             while (YourNumber > 0)
             {
@@ -116,7 +120,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
                 result *= temp;
                 YourNumber /= 10;
             }
-            return Math.Pow(result, 1.0/SumOfNumbers);
+            return Math.Pow(result, 1.0 / SumOfNumbers);
         }
         static double FactorialRecursion(long YourNumber)
         {
@@ -138,7 +142,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
         static long SumOfEvenNumbers_ForLoop(long YourNumber)
         {
             long sum = 0;
-            for(int i = 0; i < YourNumber; i++)
+            for (int i = 0; i < YourNumber; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -150,7 +154,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
         static long SumOfEvenNumbers_WhileLoop(long YourNumber)
         {
             long sum = 0;
-            int i=0;
+            int i = 0;
             while (i < YourNumber)
             {
                 if (i % 2 == 0)
@@ -188,10 +192,10 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             }
             return sum;
         }
-        static long SumOfOddNumbers(int From, int To)
+        static long SumOfOddNumbers(long From, long To)
         {
             long sum = 0;
-            for (int i = From; i < To; i++)
+            for (long i = From; i < To; i++)
             {
                 if (i % 2 == 1)
                 {
@@ -200,10 +204,10 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             }
             return sum;
         }
-        static long SumOfEvenNumbers(int From, int To)
+        static long SumOfEvenNumbers(long From, long To)
         {
             long sum = 0;
-            for (int i = From; i < To; i++)
+            for (long i = From; i < To; i++)
             {
                 if (i % 2 == 0)
                 {
