@@ -13,7 +13,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
             int MinNumInArray = 0;
             bool ContainsSymbol;
             char Symb;
-            Console.WriteLine("Enter range of nums for future");
+            Console.WriteLine("Enter range of nums to fill");
             Console.Write("Start : ");
             int StartOfRange = Convert.ToInt32(Console.ReadLine());
             Console.Write("End : ");
@@ -84,11 +84,27 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
 
             Console.WriteLine("Replacing elements of arrays from 2nd area to 3rd: ");
             NumMassive = RotateArrayNums(NumMassive);
-            SymbMassive= RotateArrayChars(SymbMassive);
+            SymbMassive = RotateArrayChars(SymbMassive);
             PrintArray(SymbMassive);
             Console.WriteLine();
             PrintArray(NumMassive);
+            Console.WriteLine();
 
+
+            Console.WriteLine("Replacing elements of arrays from 3rd area to 1st: ");
+            NumMassive = RotateArrayNums(NumMassive);
+            SymbMassive = RotateArrayChars(SymbMassive);
+            PrintArray(SymbMassive);
+            Console.WriteLine();
+            PrintArray(NumMassive);
+            Console.WriteLine();
+
+            Console.WriteLine("Replacing elements of arrays from 1st area to 4th: ");
+            NumMassive = RotateArrayNums(NumMassive);
+            SymbMassive = RotateArrayChars(SymbMassive);
+            PrintArray(SymbMassive);
+            Console.WriteLine();
+            PrintArray(NumMassive);
 
 
             Console.ReadKey();
