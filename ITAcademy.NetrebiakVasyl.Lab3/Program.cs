@@ -107,23 +107,42 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                             loop = false;
                             break;
                         case 2:
-                            Console.WriteLine("Set range");
-                            Console.Write("Start: ");
-                            start = Convert.ToInt32(Console.ReadLine());
-                            Console.WriteLine();
-                            Console.Write("End: ");
-                            end = Convert.ToInt32(Console.ReadLine());
-                            FillWithEven(array, start, end);
+                            while (true)
+                            {
+                                Console.WriteLine("Set range");
+                                Console.Write("Start: ");
+                                start = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                Console.Write("End: ");
+                                end = Convert.ToInt32(Console.ReadLine());
+                                if (end > start)
+                                {
+                                    FillWithEven(array, start, end);
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Error with start and end of range!");
+                                }
+                            }
                             loop = false;
                             break;
                         case 3:
-                            Console.WriteLine("Set range");
-                            Console.Write("Start: ");
-                            start = Convert.ToInt32(Console.ReadLine());
-                            Console.WriteLine();
-                            Console.Write("End: ");
-                            end = Convert.ToInt32(Console.ReadLine());
-                            FillWithOdd(array, start, end);
+                           Console.WriteLine("Set range");
+                                Console.Write("Start: ");
+                                start = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                Console.Write("End: ");
+                                end = Convert.ToInt32(Console.ReadLine());
+                                if (end > start)
+                                {
+                                    FillWithOdd(array, start, end);
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Error with start and end of range!");
+                                }
                             loop = false;
                             break;
                         case 4:
@@ -138,13 +157,14 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                             Console.WriteLine("Incorrect input!");
                             break;
                     }
+                    break;
                     
                 }
                 PrintArray(array);
                 loop = true;
                 Console.WriteLine();
 
-                if ((1 <= choice) && (choice <= 3))
+                if (choice <= 3)
                 {
                     Console.WriteLine("Choose what to find");
                     Console.WriteLine("1. Max num");
@@ -246,7 +266,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
             }
             for (int i = 0; i < array.GetLength(0); i++)
             {
-                for (int j = 0; j <= i; j++)
+                for (int j = 0; j < array.GetLength(1); j++)
                 {
                     if (array[i, j] != null)
                     {
@@ -269,7 +289,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
             }
             for (int i = 0; i < array.GetLength(0); i++)
             {
-                for (int j = 0; j <= i; j++)
+                for (int j = 0; j < array.GetLength(1); j++)
                 {
                     if (array[i, j] != null)
                     {
