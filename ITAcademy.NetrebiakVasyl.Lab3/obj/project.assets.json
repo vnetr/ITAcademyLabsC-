@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab3\\ITAcademy.NetrebiakVasyl.Lab3.csproj",
+      "projectUniqueName": "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab3\\ITAcademy.NetrebiakVasyl.Lab3.csproj",
       "projectName": "ITAcademy.NetrebiakVasyl.Lab3",
-      "projectPath": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab3\\ITAcademy.NetrebiakVasyl.Lab3.csproj",
+      "projectPath": "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab3\\ITAcademy.NetrebiakVasyl.Lab3.csproj",
       "packagesPath": "C:\\Users\\vnetr\\.nuget\\packages\\",
-      "outputPath": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab3\\obj\\",
+      "outputPath": "C:\\Users\\vnetr\\source\\repos\\ITAcademy.NetrebiakVasyl.Lab3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
