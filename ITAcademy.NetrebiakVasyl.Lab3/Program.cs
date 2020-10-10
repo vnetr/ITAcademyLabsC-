@@ -13,11 +13,11 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                 bool loop = true;
                 char choiceInChar;
                 int choice = 0;
-                int start;
-                int end;
+                int start = 0;
+                int end = 0;
                 char symbol;
                 Console.Write("Input size of square matrix: ");
-                var size = Convert.ToInt32(Console.ReadLine());
+                int size = Convert.ToInt32(Console.ReadLine());
                 dynamic[,] array = new dynamic[size, size];
                 Console.WriteLine();
                 while (loop)
@@ -109,32 +109,24 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                         case 2:
                             while (true)
                             {
-                                Console.WriteLine("Set range");
-                                Console.Write("Start: ");
-                                start = Convert.ToInt32(Console.ReadLine());
-                                Console.WriteLine();
-                                Console.Write("End: ");
-                                end = Convert.ToInt32(Console.ReadLine());
-                                if (end > start)
+                                SetRange(ref start, ref end);
+                                if ((end > start)&&(end-start>=size*size))
                                 {
                                     FillWithEven(array, start, end);
                                     break;
                                 }
                                 else
                                 {
-                                    Console.WriteLine("Error with start and end of range!");
+                                    Console.WriteLine("Error with start and end of range or range too low!");
                                 }
                             }
                             loop = false;
                             break;
                         case 3:
-                           Console.WriteLine("Set range");
-                                Console.Write("Start: ");
-                                start = Convert.ToInt32(Console.ReadLine());
-                                Console.WriteLine();
-                                Console.Write("End: ");
-                                end = Convert.ToInt32(Console.ReadLine());
-                                if (end > start)
+                            while (loop)
+                            {
+                                SetRange(ref start, ref end);
+                                if ((end > start)&&(end - start >= size * size))
                                 {
                                     FillWithOdd(array, start, end);
                                     break;
@@ -143,6 +135,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                                 {
                                     Console.WriteLine("Error with start and end of range!");
                                 }
+                            }
                             loop = false;
                             break;
                         case 4:
@@ -175,12 +168,12 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                         switch (choice)
                         {
                             case 1:
-                                Console.WriteLine("Max num in area" + FindMax(array)); 
+                                Console.WriteLine("Max num in area: " + FindMax(array)); 
                                 loop = false;
                                 break;
                             case 2:
                                 
-                                Console.WriteLine("Min num in area" + FindMin(array));
+                                Console.WriteLine("Min num in area: " + FindMin(array));
                                 loop = false;
                                 break;
                             default:
@@ -194,7 +187,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                     Console.Write("Input symbol: ");
                     symbol = Console.ReadKey().KeyChar;
                     Console.WriteLine();
-                    Console.WriteLine($"Does arrea contains {symbol}: {ContainsSymbol(array, symbol)}");
+                    Console.WriteLine($"Does area contains {symbol}: {ContainsSymbol(array, symbol)}");
 
                 }
                 loop = true;
@@ -240,6 +233,16 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
                 }
                 Console.WriteLine();
             }
+        }
+
+        static void SetRange(ref int start, ref int end)
+        {
+            Console.WriteLine("Set range");
+            Console.Write("Start: ");
+            start = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("End: ");
+            end = Convert.ToInt32(Console.ReadLine());
         }
         
         static void FillWithRandom(dynamic[,] array)
@@ -374,7 +377,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab3
             return min;
         }
 
-        static bool ContainsSymbol(dynamic[,] array, dynamic SymbolToFind)
+        static bool ContainsSymbol(dynamic[,] array, char SymbolToFind)
         {
             for (int i = 0; i < array.GetLength(0); i++)
             {
