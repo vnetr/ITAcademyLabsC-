@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TechShop.Informer">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Informer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechShop.Product">
+    <Position X="5.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAgIAAAAAAAAQABAAAAAABAEAEQAAAAAAAABAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechShop.Program">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechShop.User">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQAAAAAAAAAAAAAAAgAAAAAIAAAMAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechShop.Products.Phone">
+    <Position X="1" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAABECAAAAAAAIAAAA=</HashCode>
+      <FileName>Products\Phone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechShop.Products.Headphones">
+    <Position X="4.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAABAECAAAAAAAAAAAA=</HashCode>
+      <FileName>Products\Headphones.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechShop.Products.Game">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAEAAAAQAAAgAAAA=</HashCode>
+      <FileName>Products\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TechShop.Products.FlashDrive">
+    <Position X="10.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAECAEAAAAAIAAAA=</HashCode>
+      <FileName>Products\FlashDrive.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Enum Name="TechShop.GameGenres">
+    <Position X="1" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAACAAAAAAABAAAAAAAAAAAAAACABBAAAAQ=</HashCode>
+      <FileName>GameGenres.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

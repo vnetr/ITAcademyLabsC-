@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Security.Cryptography;
-
 namespace ITAcademy.NetrebiakVasyl.Lab1
 {
     class Program
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Lab1");
             Console.Write("Input value of N: ");
 
 
@@ -16,133 +12,139 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             N = Convert.ToInt64(Console.ReadLine());
 
 
-            int DigitsInNumber;
-            DigitsInNumber = AmtOfNumbers(N);
-            Console.WriteLine("Amount of numbers in N = " + DigitsInNumber);
+            int digitsInNumber;
+            digitsInNumber = AmountOfNumberss(N);
+            Console.WriteLine("Amount of numbers in N = " + digitsInNumber);
             Console.WriteLine();
 
 
-            int SizeOfArray = DigitsInNumber;
-            long[] MassiveOfNumbers = new long[SizeOfArray];
-
-            OrganizeMassive(ref MassiveOfNumbers, N);
-
-            for (int i = 0; i < MassiveOfNumbers.Length; i++)
+          
+            long[] massiveOfNumbers = new long[digitsInNumber];
+            OrganizeMassive(massiveOfNumbers, N);
+            for (int i = digitsInNumber-1; i>=0; i--)
             {
-                Console.WriteLine($"MassiveOfNumbers[{i}]={MassiveOfNumbers[i]}");
+                Console.WriteLine($"{massiveOfNumbers[i]}");
             }
             Console.WriteLine();
 
 
-            double ArithmeticMeanOfNNums = ArithmeticMean(N, DigitsInNumber);
-            Console.WriteLine($"Arithmetic mean of digits of N = {ArithmeticMeanOfNNums}");
+            double arithmeticMeanOfNNums=ArithmeticMean(N, digitsInNumber);
+            Console.WriteLine($"Arithmetic mean of digits of N = {arithmeticMeanOfNNums}");
             Console.WriteLine();
 
 
-            double GeometricMeanOfNNums = GeometricMean(N, DigitsInNumber);
-            Console.WriteLine($"Geometric mean of digits of N = {GeometricMeanOfNNums}");
+            double geometricMeanOfNNums=GeometricMean(N, digitsInNumber);
+            Console.WriteLine($"Geometric mean of digits of N = {geometricMeanOfNNums}");
             Console.WriteLine();
 
-            double FactorialOfNum = FactorialRecursion(N);
-            Console.WriteLine($"Factorial of N with recursion = {FactorialOfNum}");
-            FactorialOfNum = FactorialLoop(N);
-            Console.WriteLine($"Factorial of N with Loop = {FactorialOfNum}");
+            double factorialOfNum = FactorialRecursion(N);
+            Console.WriteLine($"Factorial of N with recursion = {factorialOfNum}");
+            factorialOfNum = FactorialLoop(N);
+            Console.WriteLine($"Factorial of N with Loop = {factorialOfNum}");
             Console.WriteLine();
 
-            long SumOfEvenNumbersToNum;
-            SumOfEvenNumbersToNum = SumOfEvenNumbers_ForLoop(N);
-            Console.WriteLine($"Sum of even numbers from 1 to N using FOR loop = {SumOfEvenNumbersToNum}");
-            SumOfEvenNumbersToNum = SumOfEvenNumbers_WhileLoop(N);
-            Console.WriteLine($"Sum of even numbers from 1 to N using WHILE loop = {SumOfEvenNumbersToNum}");
-            SumOfEvenNumbersToNum = SumOfEvenNumbers_DoWhileLoop(N);
-            Console.WriteLine($"Sum of even numbers from 1 to N using DO WHILE loop = {SumOfEvenNumbersToNum}");
+            long sumOfEvenNumbersToNum;
+            sumOfEvenNumbersToNum = SumOfEvenNumbers_ForLoop(N);
+            Console.WriteLine($"Sum of even numbers from 1 to N using FOR loop = {sumOfEvenNumbersToNum}");
+            sumOfEvenNumbersToNum = SumOfEvenNumbers_WhileLoop(N);
+            Console.WriteLine($"Sum of even numbers from 1 to N using WHILE loop = {sumOfEvenNumbersToNum}");
+            sumOfEvenNumbersToNum = SumOfEvenNumbers_DoWhileLoop(N);
+            Console.WriteLine($"Sum of even numbers from 1 to N using DO WHILE loop = {sumOfEvenNumbersToNum}");
             Console.WriteLine();
 
-            long SumOfOddNumbersToNum;
-            SumOfOddNumbersToNum = SumOfOddNumbers(N);
-            Console.WriteLine($"Sum of odd numbers from 1 to N = {SumOfOddNumbersToNum}");
+            long sumOfOddNumbersToNum;
+            sumOfOddNumbersToNum = SumOfOddNumbers(N);
+            Console.WriteLine($"Sum of odd numbers from 1 to N = {sumOfOddNumbersToNum}");
 
-            long SumOfEvenNums;
-            long SumOfOddNums;
+            long sumOfEvenNums;
+            long sumOfOddNums;
             Console.Write("Enter first num of range: ");
-            long FirsNumOfRange = Convert.ToInt64(Console.ReadLine());
+            int firsNumOfRange = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter end num of range: ");
-            long SecondNumOfRange = Convert.ToInt64(Console.ReadLine());
-            SumOfEvenNums = SumOfEvenNumbers(FirsNumOfRange, SecondNumOfRange);
-            SumOfOddNums = SumOfOddNumbers(FirsNumOfRange, SecondNumOfRange);
-            Console.WriteLine($"Sum of even numbers in range={SumOfEvenNums}, sum of odd={SumOfOddNums}");
+            int secondNumOfRange=Convert.ToInt32(Console.ReadLine());
+            sumOfEvenNums = SumOfEvenNumbers(firsNumOfRange, secondNumOfRange);
+            sumOfOddNums = SumOfOddNumbers(firsNumOfRange, secondNumOfRange);
+            Console.WriteLine($"Sum of even numbers in range={sumOfEvenNums}, sum of odd={sumOfOddNums}");
 
             Console.ReadKey();
         }
 
-        static int AmtOfNumbers(long YourNumber)//Amt.==Amount
+        static int AmountOfNumberss(long yourNumber)
         {
-            int CounterOfNumbers = 0;
-            while (YourNumber > 0)
+            int counterOfNumbers = 0;
+            while (yourNumber > 0)
             {
-                YourNumber = YourNumber / 10;
-                CounterOfNumbers++;
+                yourNumber = yourNumber / 10;
+                counterOfNumbers++;
             }
-            return CounterOfNumbers;
+            return counterOfNumbers;
         }
-        static void OrganizeMassive(ref long[] massive, long YourNumber)
+        static void OrganizeMassive(long[] massive, long yourNumber)
         {
-            int IndexOfMassive = 0;
-            while (YourNumber > 0)
+            int indexOfMassive = 0;
+            while (yourNumber > 0)
             {
-                massive[IndexOfMassive] = YourNumber % 10;
-                YourNumber /= 10;
-                IndexOfMassive++;
+                massive[indexOfMassive] = yourNumber % 10;
+                yourNumber /= 10;
+                indexOfMassive++;
             }
         }
 
-        static double ArithmeticMean(long YourNumber, int SumOfNumbers)
+        static double ArithmeticMean(long yourNumber, int sumOfNumbers)
         {
-            double result = 0;
+            double result=0;
             double temp = 0;
-            while (YourNumber > 0)
+            while (yourNumber > 0)
             {
-                temp = YourNumber % 10;
+                temp = yourNumber % 10;
                 result += temp;
-                YourNumber /= 10;
+                yourNumber /= 10;
             }
-            result /= SumOfNumbers;
+            result /= sumOfNumbers;
             return result;
         }
 
-        static double GeometricMean(long YourNumber, int SumOfNumbers)
+        static double GeometricMean(long yourNumber, int sumOfNumbers)
         {
             double result = 1;
             double temp = 0;
-            while (YourNumber > 0)
+            while (yourNumber > 0)
             {
-                temp = YourNumber % 10;
+                temp = yourNumber % 10;
                 result *= temp;
-                YourNumber /= 10;
+                yourNumber /= 10;
             }
-            return Math.Pow(result, 1.0 / SumOfNumbers);
+            return Math.Pow(result, 1.0/sumOfNumbers);
         }
-        static double FactorialRecursion(long YourNumber)
+        static double FactorialRecursion(long yourNumber)
         {
-            if (YourNumber == 1)
+            if (yourNumber == 0)
+            {
+                return 1;
+            }
+            if (yourNumber == 1)
                 return 1;
             else
-                return YourNumber * FactorialRecursion(YourNumber - 1);
+                return yourNumber * FactorialRecursion(yourNumber - 1);
         }
-        static double FactorialLoop(long YourNumber)
+        static double FactorialLoop(long yourNumber)
         {
             double result = 1;
-            while (YourNumber != 1)
+            if (yourNumber == 0)
             {
-                result = result * YourNumber;
-                YourNumber = YourNumber - 1;
+                return 1;
+            }
+            while (yourNumber != 1)
+            {
+                result = result * yourNumber;
+                yourNumber = yourNumber - 1;
             }
             return result;
         }
-        static long SumOfEvenNumbers_ForLoop(long YourNumber)
+        static long SumOfEvenNumbers_ForLoop(long yourNumber)
         {
             long sum = 0;
-            for (int i = 0; i < YourNumber; i++)
+            for(int i = 0; i < yourNumber; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -151,11 +153,11 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             }
             return sum;
         }
-        static long SumOfEvenNumbers_WhileLoop(long YourNumber)
+        static long SumOfEvenNumbers_WhileLoop(long yourNumber)
         {
             long sum = 0;
-            int i = 0;
-            while (i < YourNumber)
+            int i=0;
+            while (i < yourNumber)
             {
                 if (i % 2 == 0)
                 {
@@ -165,7 +167,7 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             }
             return sum;
         }
-        static long SumOfEvenNumbers_DoWhileLoop(long YourNumber)
+        static long SumOfEvenNumbers_DoWhileLoop(long yourNumber)
         {
             long sum = 0;
             int i = 0;
@@ -177,13 +179,13 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
                 }
                 i++;
             }
-            while (i < YourNumber);
+            while (i < yourNumber);
             return sum;
         }
-        static long SumOfOddNumbers(long YourNumber)
+        static long SumOfOddNumbers(long yourNumber)
         {
             long sum = 0;
-            for (int i = 0; i < YourNumber; i++)
+            for (int i = 0; i < yourNumber; i++)
             {
                 if (i % 2 == 1)
                 {
@@ -192,24 +194,24 @@ namespace ITAcademy.NetrebiakVasyl.Lab1
             }
             return sum;
         }
-        static long SumOfOddNumbers(long From, long To)
+        static long SumOfOddNumbers(int from, int to)
         {
             long sum = 0;
-            for (long i = From; i < To; i++)
+            for (int i = from; i < to; i++)
             {
-                if (i % 2 == 1)
+                if ((i % 2 == 1)&&(to>from))
                 {
                     sum += i;
                 }
             }
             return sum;
         }
-        static long SumOfEvenNumbers(long From, long To)
+        static long SumOfEvenNumbers(int from, int to)
         {
             long sum = 0;
-            for (long i = From; i < To; i++)
+            for (int i = from; i < to; i++)
             {
-                if (i % 2 == 0)
+                if ((i % 2 == 0) && (to > from))
                 {
                     sum += i;
                 }

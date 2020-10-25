@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using System.Threading;
 
 namespace ITAcademy.NetrebiakVasyl.Lab2
 {
@@ -19,29 +18,29 @@ namespace ITAcademy.NetrebiakVasyl.Lab2
 
             StringBuilder Sharped=new StringBuilder();
             Sharped.Append(Str1);
-            Sharped=ReplaceWithSharpEqualSymbols(Sharped, Str2);
+            Sharped=ReplaceEqualSymbols(Sharped, Str2);
             Console.WriteLine($"Similar symbols replaced with # : {Sharped} ");
 
-            int CounterOfStrInStr = CountStrInStr(Str1, Str2);
+            int CounterOfStrInStr =Count(Str1, Str2);
             Console.WriteLine($"Str2 in Str1 : {CounterOfStrInStr}");
 
             Console.ReadKey();
         }
-        static bool ContainsAllSymbols(StringBuilder Text, StringBuilder Subtext)
+        static bool ContainsAllSymbols(StringBuilder text, StringBuilder subtext)
         {
             int counter=0;
-            for(int i = 0; i < Subtext.Length; i++)
+            for(int i = 0; i < subtext.Length; i++)
             {
-                for(int j = 0; j < Text.Length; j++)
+                for(int j = 0; j < text.Length; j++)
                 {
-                    if (Subtext[i] == Text[j])
+                    if (subtext[i] == text[j])
                     {
                         counter++;
                         break;
                     }
                 }
             }
-            if (counter  == Subtext.Length)
+            if (counter  == subtext.Length)
             {
                 return true;
             }
@@ -51,52 +50,58 @@ namespace ITAcademy.NetrebiakVasyl.Lab2
             }
 
         }
-        static StringBuilder ReplaceWithSharpEqualSymbols(StringBuilder Text, StringBuilder Subtext)
+        static StringBuilder ReplaceEqualSymbols(StringBuilder text, StringBuilder subtext)
         {
-            for (int i = 0; i < Subtext.Length; i++)
+            for (int i = 0; i < subtext.Length; i++)
             {
-                for (int j = 0; j < Text.Length; j++)
+                for (int j = 0; j < text.Length; j++)
                 {
-                    if (Subtext[i] == Text[j])
+                    if (subtext[i] == text[j])
                     {
-                        Text[j] = '#';
+                        text[j] = '#';
                     }
                 }
             }
-            return Text;
+            return text;
         }
 
-        static int CountStrInStr(StringBuilder Text, StringBuilder Subtext)
+        static int Count(StringBuilder text, StringBuilder subtext)
         {
-            int counter = 0;
-            int i = 0;
-            int j = 0;
-            int temp = 0;
-            while (i < Text.Length)
+            int textLength = text.Length;
+            int subTextLenght = subtext.Length;
+
+
+            int[,] lookup = new int[textLength + 1, subTextLenght + 1];
+
+            for (int i = 0; i <= subTextLenght; ++i)
             {
-                if (Text[i] != Subtext[j])
-                {
-                    i++;
-                    j=0;
-                    temp = 0;
-                    continue;
-                }
-                if (Text[i] == Subtext[j])
-                {
-                    temp++;
-                }
-                if (temp == Subtext.Length)
-                {
-                    i++;
-                    j = 0;
-                    temp = 0;
-                    counter++;
-                    continue;
-                }
-                i++;
-                j++;
+                lookup[0, i] = 0;
             }
-            return counter;
+
+            for (int i = 0; i <= textLength; ++i)
+            {
+                lookup[i, 0] = 1;
+            }
+
+            for (int i = 1; i <= textLength; i++)
+            {
+                for (int j = 1; j <= subTextLenght; j++)
+                {
+
+                    if (text[i - 1] == subtext[j - 1])
+                    {
+                        lookup[i, j] = lookup[i - 1, j - 1] +  lookup[i - 1, j];
+                    }
+
+                    else
+                    {
+                        lookup[i, j] = lookup[i - 1, j];
+                    }
+                }
+
+            }
+
+            return lookup[textLength, subTextLenght];
         }
     }
 }

@@ -11,3 +11,16 @@ C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.
 C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.dll
 C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.pdb
 C:\Users\vnetr\source\repos\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.genruntimeconfig.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.exe
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.deps.json
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.runtimeconfig.json
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.runtimeconfig.dev.json
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.dll
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\bin\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.pdb
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.csprojAssemblyReference.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.AssemblyInfoInputs.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.AssemblyInfo.cs
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.csproj.CoreCompileInputs.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.dll
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.pdb
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab2\obj\Debug\netcoreapp3.1\ITAcademy.NetrebiakVasyl.Lab2.genruntimeconfig.cache
