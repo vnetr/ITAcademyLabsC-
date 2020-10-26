@@ -94,7 +94,7 @@ namespace TechShop
         /// <returns></returns>
         public double CountSumOfPurchase(User user)
         {
-            double sum = user.listOfPurchase[0].price;
+            double sum = 0;
             for(int i = 0; i < user.listOfPurchase.Count; ++i)
             {
                 sum += user.listOfPurchase[i].price;

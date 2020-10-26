@@ -63,7 +63,7 @@ namespace TechShop
                 }
 
             }
-            Console.WriteLine($"Your balance{user1.balance}");
+            Console.WriteLine($"Your balance: {user1.balance}");
             Console.WriteLine("Your purchase list:");
             informer.ShowPurchaseList(user1);
             double totalPrice = informer.CountSumOfPurchase(user1);

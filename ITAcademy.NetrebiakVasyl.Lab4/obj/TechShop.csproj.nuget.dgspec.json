@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vnetr\\source\\repos\\TechShop\\TechShop.csproj": {}
+    "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab4\\TechShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vnetr\\source\\repos\\TechShop\\TechShop.csproj": {
+    "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab4\\TechShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vnetr\\source\\repos\\TechShop\\TechShop.csproj",
+        "projectUniqueName": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab4\\TechShop.csproj",
         "projectName": "TechShop",
-        "projectPath": "C:\\Users\\vnetr\\source\\repos\\TechShop\\TechShop.csproj",
+        "projectPath": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab4\\TechShop.csproj",
         "packagesPath": "C:\\Users\\vnetr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vnetr\\source\\repos\\TechShop\\obj\\",
+        "outputPath": "D:\\Repositories\\ITAcademyLabsC-\\ITAcademy.NetrebiakVasyl.Lab4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

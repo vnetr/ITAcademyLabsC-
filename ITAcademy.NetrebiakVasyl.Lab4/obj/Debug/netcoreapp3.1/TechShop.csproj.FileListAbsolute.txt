@@ -11,3 +11,16 @@ C:\Users\vnetr\source\repos\TechShop\obj\Debug\netcoreapp3.1\TechShop.csproj.Cor
 C:\Users\vnetr\source\repos\TechShop\obj\Debug\netcoreapp3.1\TechShop.dll
 C:\Users\vnetr\source\repos\TechShop\obj\Debug\netcoreapp3.1\TechShop.pdb
 C:\Users\vnetr\source\repos\TechShop\obj\Debug\netcoreapp3.1\TechShop.genruntimeconfig.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\bin\Debug\netcoreapp3.1\TechShop.exe
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\bin\Debug\netcoreapp3.1\TechShop.deps.json
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\bin\Debug\netcoreapp3.1\TechShop.runtimeconfig.json
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\bin\Debug\netcoreapp3.1\TechShop.runtimeconfig.dev.json
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\bin\Debug\netcoreapp3.1\TechShop.dll
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\bin\Debug\netcoreapp3.1\TechShop.pdb
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\obj\Debug\netcoreapp3.1\TechShop.csprojAssemblyReference.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\obj\Debug\netcoreapp3.1\TechShop.AssemblyInfoInputs.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\obj\Debug\netcoreapp3.1\TechShop.AssemblyInfo.cs
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\obj\Debug\netcoreapp3.1\TechShop.csproj.CoreCompileInputs.cache
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\obj\Debug\netcoreapp3.1\TechShop.dll
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\obj\Debug\netcoreapp3.1\TechShop.pdb
+D:\Repositories\ITAcademyLabsC-\ITAcademy.NetrebiakVasyl.Lab4\obj\Debug\netcoreapp3.1\TechShop.genruntimeconfig.cache
