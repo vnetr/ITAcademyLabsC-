@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>small game in a canvas</title>
+  <style>
+      *{
+          padding:0;
+          margin:0;
+      }
+      canvas{
+          background:#eee;
+          display:block;
+          margin: 0 auto;
+      }
+      body {
+          background: #ede2cb;
+          
+      }
+      .back{
+          text-align:center;
+          padding: 20px;
+          margin: 600px;
+          background-color: #d8987d;
+          margin-top: 5px;
+          border-radius:20px;
+      }
+      .back:hover{
+          padding:25px;
+          margin:605px;
+          margin-top:2px;
+          background-color:#db9172;
+      }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas"  width="700" height="500"></canvas>
+  <div class="back" onclick="document.location='menu.html'">
+     <h2>Back</h2>
+  </div>
+  <script src="js/js.js"></script>
+</body>
+</html>

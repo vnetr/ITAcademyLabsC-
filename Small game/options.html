@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Options </title>
+    <style>
+        body {
+            background: #ede2cb;
+            
+        }
+        .menu{
+            background-color:#ede2cb;
+            height: 440px;
+            width: 700px;
+            display:block;
+            margin:auto;
+            text-align:center;
+            padding:5px;
+        }
+        .caption{
+            padding:5px;
+            background-color:#d8c7a4;
+            margin:-5px;
+        }
+        .colors,.speeds{
+            margin-top: -30px;
+            margin-left: 250px;
+        }
+        .option{
+            background-color:#e8d3b8;
+        }
+        h3{
+            margin-left:-350px;
+            
+        }
+        #blue{
+            width:60px;
+            float:left;
+            padding:4px;
+            background-color: #0095DD;
+            margin-left:30px;
+            cursor:pointer;
+        }
+        #red {
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color: #dd0000;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #green 
+        {
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color: #00dd88;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #slow {
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color: #ddb09d;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #medium {
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color: #ddb09d;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #fast {
+            width: 60px;
+            float: left;
+            padding: 4px;
+            background-color: #ddb09d;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        #amount {
+            width: 60px;
+            float: left;
+            padding: 4px;
+            margin-left: 30px;
+            cursor: pointer;
+        }
+        .save{
+            padding:5px;
+            margin: 20px;
+            background-color:#ddb09d;
+            border-radius:20px;
+        }
+        .save:hover{
+            padding:5px;
+            margin:10px;
+            margin-top:25px;
+            background-color:#d89a7f;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="caption">
+            <h1>Settings</h1>
+        </div>
+        <div class="option">
+            <h3>Player color:</h3>
+            <div class="colors">
+                <div id="blue" onclick="localStorage.setItem('playerColor', '#0095DD');">
+                    Blue
+                </div>
+                <div id="red" onclick="localStorage.setItem('playerColor', '#dd0000');">
+                    Red
+                </div>
+                <div id="green" onclick="localStorage.setItem('playerColor', '#00dd88');">
+                    Green
+                </div>
+
+            </div>
+            <br>        <br>
+        </div>
+        <div class="option">
+            <h3>Player speed:</h3>
+            <div class="speeds">
+                <div id="slow" onclick="localStorage.setItem('playerSpeed', '2');">
+                    Slow
+                </div>
+                <div id="medium" onclick="localStorage.setItem('playerSpeed', '5');">
+                    Medium
+                </div>
+                <div id="fast" onclick="localStorage.setItem('playerSpeed', '8');">
+                    Fast
+                </div>
+
+            </div>
+            <br>        <br>
+        </div>
+        <div class="option">
+            <h3>Player size:</h3>
+            <div class="speeds">
+                <div id="slow" onclick="localStorage.setItem('playerSize', '15');">
+                    Little
+                </div>
+                <div id="medium" onclick="localStorage.setItem('playerSize', '20');">
+                    Medium
+                </div>
+                <div id="fast" onclick="localStorage.setItem('playerSize', '25');">
+                    Big
+                </div>
+
+            </div>
+            <br>        <br>
+        </div>
+        <div class="option">
+            <h3>Amount of balls to eat:</h3>
+            <div class="speeds">
+                <div id="amount">
+                    <input type="number" id="text-box" min="10" max="100" onfocusout="store()">
+                    <script>
+                        function store() {
+                            var inputAmount = document.getElementById("text-box");
+                            localStorage.setItem("amountToEat", inputAmount.value);
+                        }
+                    </script>
+                </div>
+            </div>
+            <br>        <br>
+        </div>
+        <div class="save" onclick="document.location='menu.html'">
+            <h2>Save</h2>
+        </div>
+    </div>
+</body>
+</html>
