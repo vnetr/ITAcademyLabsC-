@@ -9,7 +9,7 @@ namespace TechShop
     /// </summary>
     class Informer
     {
-        private const string path = @"D:\PATH\info.txt";
+        private const string path = @".\info.txt";
 
         /// <summary>
         /// Makes transaction and writes check in file

@@ -1,0 +1,16 @@
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\bin\Debug\netcoreapp2.1\PollBall.deps.json
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\bin\Debug\netcoreapp2.1\PollBall.runtimeconfig.json
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\bin\Debug\netcoreapp2.1\PollBall.runtimeconfig.dev.json
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\bin\Debug\netcoreapp2.1\PollBall.dll
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\bin\Debug\netcoreapp2.1\PollBall.pdb
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.csprojAssemblyReference.cache
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.AssemblyInfoInputs.cache
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.AssemblyInfo.cs
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.csproj.CoreCompileInputs.cache
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.RazorAssemblyInfo.cache
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.RazorAssemblyInfo.cs
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.RazorTargetAssemblyInfo.cache
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.dll
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.pdb
+D:\TORRENT\ASP. NET\Allfiles\Mod03\Labfiles\01_PollBall_end\PollBall\obj\Debug\netcoreapp2.1\PollBall.genruntimeconfig.cache

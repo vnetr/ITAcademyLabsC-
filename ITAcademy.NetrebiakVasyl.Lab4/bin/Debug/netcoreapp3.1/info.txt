@@ -1,0 +1,29 @@
+[Customer] Name: Vasyl Netrebiak
+Adress: Lesya Ukrainka st.
+Balance: 2450
+Spent: 900
+
+
+[PRODUCT]
+Name: GTA
+Genre: Action 
+Platform: PS4
+Manufacturer: RockStar
+Price:800
+
+
+[Customer] Name: Vasyl Netrebiak
+Adress: Lesya Ukrainka st.
+Balance: 1970
+Spent: 1380
+
+
+[PRODUCT]
+Name: Beats
+Color: White
+Type: In-Ear
+Connector: Wireless
+Manufacturer: Apple
+Price:600
+
+

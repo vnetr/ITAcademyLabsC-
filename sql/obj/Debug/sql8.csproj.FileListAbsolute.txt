@@ -1,0 +1,15 @@
+D:\source\repos\sql8\bin\Debug\sql8.exe.config
+D:\source\repos\sql8\bin\Debug\sql8.exe
+D:\source\repos\sql8\bin\Debug\sql8.pdb
+D:\source\repos\sql8\bin\Debug\EntityFramework.dll
+D:\source\repos\sql8\bin\Debug\EntityFramework.SqlServer.dll
+D:\source\repos\sql8\bin\Debug\EntityFramework.xml
+D:\source\repos\sql8\bin\Debug\EntityFramework.SqlServer.xml
+D:\source\repos\sql8\obj\Debug\sql8.csprojAssemblyReference.cache
+D:\source\repos\sql8\obj\Debug\sql8.Form1.resources
+D:\source\repos\sql8\obj\Debug\sql8.Properties.Resources.resources
+D:\source\repos\sql8\obj\Debug\sql8.csproj.GenerateResource.cache
+D:\source\repos\sql8\obj\Debug\sql8.csproj.CoreCompileInputs.cache
+D:\source\repos\sql8\obj\Debug\sql8.csproj.CopyComplete
+D:\source\repos\sql8\obj\Debug\sql8.exe
+D:\source\repos\sql8\obj\Debug\sql8.pdb
